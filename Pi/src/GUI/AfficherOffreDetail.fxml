@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="498.0" prefWidth="627.0" style="-fx-background-color: #DFF3FB;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherOffreDetailController">
+   <children>
+      <Label layoutX="61.0" layoutY="103.0" text="type">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="354.0" text="date_exp">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="154.0" text="entreprise">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="200.0" text="position">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="259.0" text="fonctionnalites">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="310.0" text="description">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="403.0" text="updated_at">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="type" layoutX="191.0" layoutY="107.0" text="Label" />
+      <Label fx:id="entreprise" layoutX="191.0" layoutY="158.0" text="Label" />
+      <Label fx:id="position" layoutX="191.0" layoutY="204.0" text="Label" />
+      <Label fx:id="fonctionnalites" layoutX="191.0" layoutY="263.0" text="Label" />
+      <Label fx:id="description1" layoutX="191.0" layoutY="314.0" text="Label" />
+      <Label fx:id="date_exp" layoutX="191.0" layoutY="367.0" text="Label" />
+      <Label fx:id="updated_at" layoutX="191.0" layoutY="407.0" text="Label" />
+   </children>
+</AnchorPane>
