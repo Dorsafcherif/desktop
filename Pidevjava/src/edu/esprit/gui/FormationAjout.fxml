@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.FormationAjoutController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="Fenetreajoutcourss" layoutX="10.0" layoutY="10.0" prefHeight="884.0" prefWidth="1299.0" style="-fx-background-color: #FFF0BC #FFF0BC;" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@../../../../../../../../Downloads/9ariniPi/src/GUI/ajoutcours.css" />
+         </stylesheets>
+         <children>
+            <TextField fx:id="lieu" layoutX="778.0" layoutY="129.0" prefHeight="39.0" prefWidth="500.0" promptText="lieu" styleClass="Acropane">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Button fx:id="FajouterCours" layoutX="1060.0" layoutY="9.0" mnemonicParsing="false" onAction="#FajouterCours" prefHeight="42.0" prefWidth="140.0" style="-fx-font-size: 14;" styleClass="button2" text="AJOUTER" textFill="#00000030">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nb_participant" layoutX="769.0" layoutY="337.0" prefHeight="39.0" prefWidth="500.0" promptText="nb_participant">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="description" alignment="TOP_LEFT" layoutX="775.0" layoutY="611.0" prefHeight="183.0" prefWidth="472.0" promptText="Description">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="973.0" layoutY="80.0" text="Ajouter une formation" textFill="#a41010">
+               <font>
+                  <Font name="High Tower Text" size="29.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="ReturnAcceuil" layoutX="614.0" layoutY="9.0" onAction="#ReturnAcceuilAjoutcours" prefHeight="42.0" prefWidth="96.0" text="Accueil">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Hyperlink>
+            <Line endX="671.0" layoutX="628.0" layoutY="56.0" startX="-109.0" />
+            <Hyperlink layoutX="1212.0" layoutY="9.0" prefHeight="42.0" prefWidth="96.0" text="Profil">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="précedent" layoutX="519.0" layoutY="9.0" onAction="#précedent" prefHeight="42.0" prefWidth="96.0" text="Retour">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="aas" layoutX="579.0" layoutY="629.0" opacity="0.0" text="Label" />
+            <Label layoutX="551.0" layoutY="135.0" text="lieu">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="535.0" layoutY="209.0" text="type_form">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="539.0" layoutY="272.0" text="libelle">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="537.0" layoutY="615.0" text="Description">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="524.0" layoutY="343.0" text="nb_participant">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="imgpathttt" layoutX="655.0" layoutY="560.0" opacity="0.0" text="Label" visible="false" />
+            <ImageView fx:id="imgajoutincours" fitHeight="150.0" fitWidth="165.0" layoutX="555.0" layoutY="638.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="886.0" fitWidth="520.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../../../images/3ae7c70d916274e7085e902385175d5e.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="type_form" layoutX="777.0" layoutY="203.0" prefHeight="39.0" prefWidth="500.0" promptText="type_form">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="libelle" layoutX="777.0" layoutY="266.0" prefHeight="39.0" prefWidth="500.0" promptText="libelle">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="prix" layoutX="769.0" layoutY="407.0" prefHeight="39.0" prefWidth="500.0" promptText="prix">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="542.0" layoutY="407.0" text="prix">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date_debut" layoutX="769.0" layoutY="465.0" prefHeight="42.0" prefWidth="500.0" promptText="date_debut" />
+            <DatePicker fx:id="date_fin" layoutX="769.0" layoutY="539.0" prefHeight="42.0" prefWidth="500.0" promptText="date_fin" />
+            <Label layoutX="560.0" layoutY="472.0" text="date_debut">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="566.0" layoutY="555.0" text="date_fin">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="579.0" layoutY="81.0" text="labelid" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

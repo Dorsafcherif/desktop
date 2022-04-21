@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="814.0" style="-fx-background-color: #FFF0BC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.AfficherDetailFormationController">
+   <children>
+      <Label layoutX="154.0" layoutY="125.0" text="libelle" textFill="RED">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="189.0" text="prix" textFill="RED">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="256.0" text="description" textFill="RED">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="libelle" layoutX="336.0" layoutY="117.0" text="Label" />
+      <Label fx:id="prix" layoutX="336.0" layoutY="193.0" text="Label" />
+      <Label fx:id="description" layoutX="336.0" layoutY="260.0" text="Label" />
+      <Label fx:id="type_form" layoutX="336.0" layoutY="63.0" text="Label" />
+      <Label fx:id="nb_participant" layoutX="336.0" layoutY="323.0" text="Label" />
+      <Label fx:id="date_debut" layoutX="291.0" layoutY="382.0" text="Label" />
+      <Label fx:id="date_fin" layoutX="393.0" layoutY="382.0" text="Label" />
+      <Label layoutX="130.0" layoutY="67.0" text="type_form" textFill="RED">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="323.0" text="nb_participant" textFill="RED">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listview" layoutX="504.0" layoutY="59.0" prefHeight="414.0" prefWidth="242.0" />
+   </children>
+</AnchorPane>
